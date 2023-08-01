@@ -1,5 +1,5 @@
 
-#[derive(Copy, Clone)]
+#[derive(Debug, Copy, Clone)]
 pub enum NodeState {
     Start,
     End,
@@ -10,10 +10,8 @@ pub enum NodeState {
     Closed,
 }
 
-#[derive(Clone, Copy)]
+#[derive(Debug, Clone, Copy)]
 pub struct Node  {
     pub state: NodeState,
     // ...
 }
-
-struct GridSet( Vec<Node> );
